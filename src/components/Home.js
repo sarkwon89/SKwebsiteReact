@@ -1,36 +1,50 @@
 import React from 'react';
-import './Home.css'
-
+import './Home.css';
+import profile from '../images/profile.jpg';
+import Raven from '../video/Raven.mp4'
+import inline from '../video/inline.mp4'
+import firstweb from "../images/firstwebsite.jpg"
+import responsive from '../images/responsiveport.jpg'
+import pass from '../images/passwordgenerator.png'
+import code from "../images/codequiz.png"
+import planner from '../images/dayplanner.jpg'
+import weather from '../images/weatherdash.jpg'
+import tender from '../images/first project.jpg'
+import dpg from '../images/dpg.jpg'
+import tpg from '../images/tpg.jpg'
+import notetaker from '../images/notetaker.jpg'
+import ems from '../images/ems.jpg'
+import Top3rec from '../images/Top3rec.PNG'
 
 
 function Home() {
     return (
         <div>
-    <div class="row welcome">
-      <div class="col s12 welcomebox">
-        <h3 class="welcometxt animated fadeInDown">SARAH KWON'S WEBSITE</h3>
+    <div className="row welcome">
+      <div className="col s12 welcomebox">
+        <h3 className="welcometxt animated fadeInDown">SARAH KWON'S WEBSITE</h3>
       </div>
       <a href="#aboutmesection">
-        <h6 class="animated bounce" id="enter">ENTER</h6>
+        <h6 className="animated bounce" id="enter">ENTER</h6>
       </a>
     </div>
 
-    <div class="container">
-      <div id="aboutmesection" class="row">
-        <div class="col s12 ">
-          <div class="aboutmeheader">
+    <div className="container">
+      <div id="aboutmesection" className="row">
+        <div className="col s12 ">
+          <div className="aboutmeheader">
             <h2>ABOUT ME</h2>
             <hr />
-            <div class="row aboutmecontainer ">
-              <div class="col s6 skimage">
-                <img class="responsive-img aboutMeImage" src="/public/images/SamandSola_SarahCole117.jpg" alt="image" />
+            <div className="row aboutmecontainer ">
+              <div className="col s6 skimage">
+                <img className="responsive-img aboutMeImage" src={profile} alt="image" />
               </div>
-              <div class="col s6">
+              <div className="col s6">
                 <p>Hi my name is Sarah Kwon. Born and raised in Seattle, Washington...</p>
               </div>
             </div>
           </div>
-          <div class="aboutmeheader2">
+          <div className="aboutmeheader2">
             <hr />
             <h4>EXPERIENCE</h4>
             <h5>Amazon</h5>
@@ -59,27 +73,27 @@ function Home() {
             <p> Bachelors of Arts and Science
               <br />4 yrs</p>
             <p>Learn more about me on Linkedin <a href="https://www.linkedin.com/in/sarah-kwon-268b2671/"
-                target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></p>
+                target="_blank"><i className="fab fa-linkedin fa-2x"></i></a></p>
             <p>Follow me on GitHub
               <a href="https://github.com/sarkwon89" target="_blank">
-                <i class="fab fa-github-alt fa-2x"></i>
+                <i className="fab fa-github-alt fa-2x"></i>
               </a></p>
             <p>Please email me for my resume
               <a href="mailto:sarkwon89@gmail.com?subject=Please send me your resume!">
-                <i class="fas fa-envelope-square fa-2x"></i>
+                <i className="fas fa-envelope-square fa-2x"></i>
               </a>
             </p>
           </div>
         </div>
       </div>
       <hr />
-      <div id="productsection" class="row products">
-        <div class="col s12">
+      <div id="productsection" className="row products">
+        <div className="col s12">
           <h2>PRODUCTS</h2>
           <p>Here are some of the non-confidential products I have created. </p>
         </div>
-        <div class="row">
-          <div class="col s12 m6">
+        <div className="row">
+          <div className="col s12 m6">
             <hr />
             <h4>Raven</h4>
             <p>This was the first product I launched as a product manager in 2017. Raven is an inline
@@ -88,11 +102,11 @@ function Home() {
               first
               to
               market inline auto-play video ad on the IMDb platform</p>
-            <video class="responsive-video" controls>
-              <source src="../SKwebsite/assets/video/Raven iOS hp.mp4" type="video/mp4" />
+            <video className="responsive-video" controls>
+              <source src={Raven} type="video/mp4" />
             </video>
           </div>
-          <div class="col s12 m6">
+          <div className="col s12 m6">
             <hr />
             <h4>Inline Banner Ads</h4>
             <p>IMDb served pop up display ads until 2017. As the product manager, moved pop up ads inline on
@@ -103,13 +117,13 @@ function Home() {
               2019. Recently checked the IMDb app and saw that all the display ads are now inline on other
               page
               types!</p>
-            <video class="responsive-video" controls>
-              <source src="../SKwebsite/assets/video/inline_banner_ad_hp.mp4" type="video/mp4" />
+            <video className="responsive-video" controls>
+              <source src={inline} type="video/mp4" />
             </video>
           </div>
         </div>
-        <div class="row">
-          <div class="col s12">
+        <div className="row">
+          <div className="col s12">
             <hr />
             <h4>Custom Landing Page</h4>
             <p>Created and launched Pilot, which is a program that drives incremental short-term and long-term
@@ -117,25 +131,25 @@ function Home() {
               launched was the Custom Landing Page ad product.</p>
           </div>
         </div>
-        <div class="row">
-          <div class="col s12 m6">
+        <div className="row">
+          <div className="col s12 m6">
             <h6>Star Wars Custom Landing Page</h6>
             <a href="https://m.imdb.com/lego/star-wars" target="_blank">
-              <h8>VIEW <i class="fas fa-external-link-square-alt"></i></h8>
+              <h8>VIEW <i className="fas fa-external-link-square-alt"></i></h8>
             </a>
-            <div class="clpbox">
+            <div className="clpbox">
               <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6408358818178301952" height="350px"
                 width="100%" frameborder="0" allowfullscreen="" title="Embedded post">
               </iframe>
             </div>
             <br />
           </div>
-          <div class="col s12 m6">
+          <div className="col s12 m6">
             <h6>Jurassic World Custom Landing Page</h6>
             <a href="https://m.imdb.com/lego/jurassic-world/" target="_blank">
-              <h8>VIEW <i class="fas fa-external-link-square-alt"></i></h8>
+              <h8>VIEW <i className="fas fa-external-link-square-alt"></i></h8>
             </a>
-            <div class="clpbox">
+            <div className="clpbox">
               <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6418509794537279488" height="350px"
                 width="100%" frameborder="0" allowfullscreen="" title="Embedded post">
               </iframe>
@@ -144,83 +158,83 @@ function Home() {
         </div>
       </div>
       <hr />
-      <div id="projectsection" class="row projects">
-        <div class="col s12">
+      <div id="projectsection" className="row projects">
+        <div className="col s12">
           <h2>PROJECTS</h2>
           <p>Here are all of the projects and assignments I completed at my time at UW coding bootcamp.
             Each
             assignment displays the coding skills I have gained.
           </p>
         </div>
-        <div class="row">
-          <div class="col s12 m6">
+        <div className="row">
+          <div className="col s12 m6">
             <hr />
             <h4>My First Website</h4>
             <p>My very first website built during UW Coding Bootcamp. This site
               was created using HTML and CSS without any CSS frameworks like bootstrap.
             </p>
             <a href="https://github.com/sarkwon89/studentportfolio" target="_blank">
-              <i class="fab fa-github-alt fa-2x"></i>
+              <i className="fab fa-github-alt fa-2x"></i>
             </a>
             <a href="https://sarkwon89.github.io/studentportfolio/" target="_blank">
-              <i class="fas fa-external-link-square-alt fa-2x"></i>
+              <i className="fas fa-external-link-square-alt fa-2x"></i>
             </a>
             <a href="https://sarkwon89.github.io/studentportfolio/" target="_blank">
-              <img class="responsive-img" src="assets/images/firstwebsite.jpg" alt="image" />
+              <img className="responsive-img" src={firstweb} alt="image" />
             </a>
           </div>
-          <div class="col s12 m6">
+          <div className="col s12 m6">
             <hr />
             <h4>Responisive Portfolio</h4>
             <p>Built a responsive portfolio that will render on a variety of devices and window or screen sizes.
             </p>
             <a href="https://github.com/sarkwon89/sarahkwonwebsite" target="_blank">
-              <i class="fab fa-github-alt fa-2x"></i>
+              <i className="fab fa-github-alt fa-2x"></i>
             </a>
             <a href="https://sarkwon89.github.io/sarahkwonwebsite/home" target="_blank">
-              <i class="fas fa-external-link-square-alt fa-2x"></i>
+              <i className="fas fa-external-link-square-alt fa-2x"></i>
             </a>
             <a href="https://sarkwon89.github.io/sarahkwonwebsite/home" target="_blank">
-              <img class="responsive-img" src="assets/images/responsiveport.jpg" alt="image" />
+              <img className="responsive-img" src={responsive} alt="image" />
             </a>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col s12 m6">
+        <div className="row">
+          <div className="col s12 m6">
             <hr />
             <h4>Password Generator</h4>
             <p>Created an application that generates a random password based on
               user-selected criteria. This app runs in the browser and feature dynamically updated
               HTML and CSS powered by the JavaScript code.</p>
             <a href="https://github.com/sarkwon89/PasswordGeneratorSK" target="_blank">
-              <i class="fab fa-github-alt fa-2x"></i>
+              <i className="fab fa-github-alt fa-2x"></i>
             </a>
             <a href="https://sarkwon89.github.io/PasswordGeneratorSK/passwordgenerator" target="_blank">
-              <i class="fas fa-external-link-square-alt fa-2x"></i>
+              <i className="fas fa-external-link-square-alt fa-2x"></i>
             </a>
             <a href="https://sarkwon89.github.io/PasswordGeneratorSK/passwordgenerator" target="_blank">
-              <img class="responsive-img" src="assets/images/passwordgenerator.png" alt="" />
+              <img className="responsive-img" src={pass} alt="" />
             </a>
           </div>
-          <div class="col s12 m6">
+          <div className="col s12 m6">
             <hr />
             <h4>Code Quiz</h4>
             <p>From scratch, built a timer-based quiz application that stores scores
               client-side.</p>
             <a href="https://github.com/sarkwon89/SKcodequiz" target="_blank">
-              <i class="fab fa-github-alt fa-2x"></i>
+              <i className="fab fa-github-alt fa-2x"></i>
             </a>
             <a href="https://sarkwon89.github.io/SKcodequiz/" target="_blank">
-              <i class="fas fa-external-link-square-alt fa-2x"></i>
+              <i className="fas fa-external-link-square-alt fa-2x"></i>
             </a>
             <a href="https://sarkwon89.github.io/SKcodequiz/" target="_blank">
-              <img class="responsive-img" src="assets/images/codequiz.png" alt="image" />
+              <img className="responsive-img" src={code} alt="image" />
             </a>
           </div>
         </div>
-        <div class="row">
-          <div class="col s12 m6">
+        <div className="row">
+          <div className="col s12 m6">
             <hr />
             <h4>Day Planner</h4>
             <p>Created a simple calendar application that allows the user to save events for each hour of
@@ -228,29 +242,29 @@ function Home() {
               This app runs in the browser and features dynamically updated HTML and CSS powered by
               jQuery.</p>
             <a href="https://github.com/sarkwon89/dayplannerSK" target="_blank">
-              <i class="fab fa-github-alt fa-2x"></i>
+              <i className="fab fa-github-alt fa-2x"></i>
             </a>
             <a href="https://sarkwon89.github.io/dayplannerSK/dayplannerSK" target="_blank">
-              <i class="fas fa-external-link-square-alt fa-2x"></i>
+              <i className="fas fa-external-link-square-alt fa-2x"></i>
             </a>
             <a href="https://sarkwon89.github.io/dayplannerSK/dayplannerSK" target="_blank">
-              <img class="responsive-img" src="assets/images/dayplanner.jpg" alt="image" />
+              <img className="responsive-img" src={planner} alt="image" />
             </a>
           </div>
-          <div class="col s12 m6">
+          <div className="col s12 m6">
             <hr />
             <h4>Weather Channel</h4>
             <p>Built a weather dashboard application with search functionality to find current weather
               conditions
               and the future weather outlook for multiple cities.</p>
             <a href="https://github.com/sarkwon89/weatherchannelSK" target="_blank">
-              <i class="fab fa-github-alt fa-2x"></i>
+              <i className="fab fa-github-alt fa-2x"></i>
             </a>
             <a href="https://sarkwon89.github.io/weatherchannelSK/" target="_blank">
-              <i class="fas fa-external-link-square-alt fa-2x"></i>
+              <i className="fas fa-external-link-square-alt fa-2x"></i>
             </a>
             <a href="https://sarkwon89.github.io/weatherchannelSK/" target="_blank">
-              <img class="responsive-img" src="assets/images/weatherdash.jpg" alt="image" />
+              <img className="responsive-img" src={weather} alt="image" />
             </a>
           </div>
         </div>
@@ -269,7 +283,7 @@ function Home() {
               <i class="fas fa-external-link-square-alt fa-2x"></i>
             </a>
             <a href="https://chrisp-dev.github.io/drinkanator/" target="_blank">
-              <img class="responsive-img" src="assets/images/first project.jpg" alt="image" />
+              <img class="responsive-img" src={tender} alt="image" />
             </a>
           </div>
           <div class="col s12 m6">
@@ -280,7 +294,7 @@ function Home() {
             </p>
             <a href="https://github.com/sarkwon89/DPG" target="_blank">
               <i class="fab fa-github-alt fa-2x"></i>
-              <img class="responsive-img" src="assets/images/dpg.jpg" alt="image" />
+              <img class="responsive-img" src={dpg} alt="image" />
             </a>
 
           </div>
@@ -297,7 +311,7 @@ function Home() {
               information provided by the user..</p>
             <a href="https://github.com/sarkwon89/TPG" target="_blank">
               <i class="fab fa-github-alt fa-2x"></i>
-              <img class="responsive-img" src="assets/images/tpg.jpg" alt="image" />
+              <img class="responsive-img" src={tpg} alt="image" />
             </a>
 
           </div>
@@ -314,7 +328,7 @@ function Home() {
               <i class="fas fa-external-link-square-alt fa-2x"></i>
             </a>
             <a href="https://sknotetaker.herokuapp.com/" target="_blank">
-              <img class="responsive-img" src="assets/images/notetaker.jpg" alt="image" />
+              <img class="responsive-img" src={notetaker} alt="image" />
             </a>
           </div>
         </div>
@@ -328,7 +342,7 @@ function Home() {
               databases.</p>
             <a href="https://github.com/sarkwon89/EMS" target="_blank">
               <i class="fab fa-github-alt fa-2x"></i>
-              <img class="responsive-img" src="assets/images/ems.jpg" alt="" />
+              <img class="responsive-img" src={ems} alt="" />
             </a>
 
           </div>
@@ -347,7 +361,7 @@ function Home() {
               <i class="fas fa-external-link-square-alt fa-2x"></i>
             </a>
             <a href="https://top3recommendations.herokuapp.com/" target="_blank">
-              <img class="responsive-img" src="assets/images/Top3rec.PNG" alt="image" />
+              <img class="responsive-img" src={Top3rec} alt="image" />
             </a>
           </div>
         </div>

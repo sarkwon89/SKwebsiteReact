@@ -25,7 +25,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url(/public/images/background.jpg) center;
+    background: url(/src/images/background.jpg) center;
     -webkit-background-size: cover;
     background-size: cover;
     border: solid #332D2D;
