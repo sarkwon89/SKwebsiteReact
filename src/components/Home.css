@@ -25,7 +25,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url(/src/images/background.jpg) center;
+    background: url("https://res.cloudinary.com/diad1aa5z/image/upload/v1581924836/background_j8l6d1.jpg") center;
     -webkit-background-size: cover;
     background-size: cover;
     border: solid #332D2D;
